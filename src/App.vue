@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- 声明路由连接 -->
+    <div><router-link to="/discover">发现音乐</router-link></div>
+    <div><router-link to="/my">我的音乐</router-link></div>
+    <div><router-link to="/friend">关注</router-link></div>
+    <div><router-link to="/showproduct">商品展示</router-link></div>
+    <!-- 声明标签占位符 -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { 
+
   }
 }
 </script>
